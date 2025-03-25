@@ -56,12 +56,15 @@ Voici les scripts définis dans le fichier package.json :
 
 ## Configuration de l'API Backend
 
+Le backend de l'application est disponible sur le dépôt suivant :  
+[oc-ArgentBank-API-p13](https://github.com/SaidMohamedDayas/oc-ArgentBank-API-p13)
+
 L'application frontend communique avec une API backend. Par défaut, l'URL de l'API est configurée pour pointer vers `http://localhost:3001/api/v1`. Assurez-vous que le backend est en cours d'exécution avant de lancer l'application frontend.
 
 Si vous devez modifier l'URL de l'API, mettez à jour les fichiers suivants :
 
-- authApi.js
-- userApi.js
+- `authApi.js`
+- `userApi.js`
 
 ## Contribution
 
