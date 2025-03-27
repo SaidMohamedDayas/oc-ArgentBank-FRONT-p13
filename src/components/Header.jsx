@@ -29,7 +29,10 @@ function Header() {
   }, [user]);
 
   const handleSave = () => {
-    dispatch(updateUserProfile({ token, profile: { firstName, lastName } }));
+    const updatedFirstName = firstName.trim() || user.firstName;
+    const updatedLastName = lastName.trim() || user.lastName;
+
+    dispatch(updateUserProfile({ token, profile: { firstName: updatedFirstName, lastName: updatedLastName } }));
     setIsEditing(false);
   };
 
